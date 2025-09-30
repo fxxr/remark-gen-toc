@@ -1,0 +1,65 @@
+{
+  "name": "remark-simple-toc",
+  "description": "A Remark plugin to generate a table of contents",
+  "version": "1.0.0",
+  "type": "module",
+  "author": "Anatoly Nechaev <https://github.com/fxxr>",
+  "license": "MIT",
+  "homepage": "https://github.com/fxxr/remark-simple-toc",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fxxr/remark-simple-toc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fxxr/remark-simple-toc/issues"
+  },
+  "keywords": [
+    "content",
+    "contents",
+    "generation",
+    "markdown",
+    "mdast",
+    "plugin",
+    "remark",
+    "remark-plugin",
+    "table",
+    "toc",
+    "unified"
+  ],
+  "module": "./dist/remark-simple-toc.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/remark-simple-toc.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "prepare": "npm run build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "ci": "vitest run && npm run build"
+  },
+  "devDependencies": {
+    "@types/mdast": "^4.0.4",
+    "@types/node": "^24.3.1",
+    "node-html-parser": "^7.0.1",
+    "rehype-stringify": "^10.0.1",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.2",
+    "typescript": "~5.8.3",
+    "unified": "^11.0.5",
+    "vite": "^7.1.2",
+    "vite-plugin-dts": "^4.5.4",
+    "vitest": "^3.2.4"
+  },
+  "dependencies": {
+    "github-slugger": "^2.0.0",
+    "mdast-util-to-string": "^4.0.0"
+  }
+}
