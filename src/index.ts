@@ -10,7 +10,7 @@ export const DEFAULT_OPTIONS = {minDepth: MIN_DEPTH, maxDepth: MAX_DEPTH, classN
 
 
 
-export default function remarkSimpleTocPlugin(options: Options = DEFAULT_OPTIONS) {
+export default function remarkGenTocPlugin(options: Options = DEFAULT_OPTIONS) {
   return (tree: Root) => {
     const opts: Options = {...DEFAULT_OPTIONS, ...options}
     const minDepth = opts.minDepth ?? MIN_DEPTH

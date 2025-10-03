@@ -1,17 +1,17 @@
 {
-  "name": "remark-simple-toc",
+  "name": "remark-gen-toc",
   "description": "A Remark plugin to generate a table of contents",
   "version": "1.0.0",
   "type": "module",
   "author": "Anatoly Nechaev <https://github.com/fxxr>",
   "license": "MIT",
-  "homepage": "https://github.com/fxxr/remark-simple-toc",
+  "homepage": "https://github.com/fxxr/remark-gen-toc",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fxxr/remark-simple-toc.git"
+    "url": "git+https://github.com/fxxr/remark-gen-toc.git"
   },
   "bugs": {
-    "url": "https://github.com/fxxr/remark-simple-toc/issues"
+    "url": "https://github.com/fxxr/remark-gen-toc/issues"
   },
   "keywords": [
     "content",
@@ -26,11 +26,11 @@
     "toc",
     "unified"
   ],
-  "module": "./dist/remark-simple-toc.js",
+  "module": "./dist/remark-gen-toc.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/remark-simple-toc.js",
+      "import": "./dist/remark-gen-toc.js",
       "types": "./dist/index.d.ts"
     }
   },
@@ -54,7 +54,7 @@
     "remark-rehype": "^11.1.2",
     "typescript": "~5.8.3",
     "unified": "^11.0.5",
-    "vite": "^7.1.2",
+    "vite": "7.1.5",
     "vite-plugin-dts": "^4.5.4",
     "vitest": "^3.2.4"
   },

@@ -1,6 +1,7 @@
-# remark-simple-toc
+# remark-gen-toc
 
-[![npm version](https://img.shields.io/npm/v/remark-simple-toc.svg)](https://www.npmjs.com/package/remark-simple-toc)
+[![npm version](https://img.shields.io/npm/v/remark-gen-toc.svg)](https://www.
+npmjs.com/package/remark-gen-toc)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
  
 A Remark plugin to generate a table of contents
@@ -8,7 +9,7 @@ A Remark plugin to generate a table of contents
 ## Installation
 
 ```bash
-npm install remark-simple-toc
+npm install remark-gen-toc
 ```
 
 ## Usage
@@ -20,15 +21,10 @@ import {unified} from 'unified'
 import remarkParse from 'remark-parse'
 import remarkRehype from 'remark-rehype'
 import rehypeStringify from 'rehype-stringify'
-import remarkSimpleToc from 'remark-simple-toc'
+import remarkToc from 'remark-gen-toc'
 
 const tocOptions = {minDepth: 1, maxDepth: 4, className: 'toc'}
-const {value} = unified().
-  use(remarkParse).
-  use(remarkSimpleToc, tocOptions).
-  use(remarkRehype).
-  use(rehypeStringify).
-  processSync(md)
+const {value} = unified().use(remarkParse).use(remarkToc, tocOptions).use(remarkRehype).use(rehypeStringify).processSync(md)
 console.log(String(value))
 ```
 
@@ -96,7 +92,8 @@ Some content 2.2
 
 ## Contributing
 Contributions, issues, and feature requests are welcome!  
-Feel free to open an [issue](https://github.com/fxxr/remark-simple-toc/issues) or submit a pull request.
+Feel free to open an [issue](https://github.com/fxxr/remark-gen-toc/issues) or 
+submit a pull request.
 
 ## Related
 - [remark-attrs](https://github.com/fxxr/remark-attrs) – Add custom attributes to Markdown elements

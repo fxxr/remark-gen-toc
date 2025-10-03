@@ -7,9 +7,9 @@ export default defineConfig({
   build: {
     lib: {
       entry: './src/index.ts',
-      name: 'remark-simple-toc',
+      name: 'remark-gen-toc',
       formats: ['es'],
-      fileName: 'remark-simple-toc',
+      fileName: 'remark-gen-toc',
     },
     minify: false,
   },

@@ -6,7 +6,7 @@ import remarkParse from 'remark-parse'
 import remarkRehype from 'remark-rehype'
 import rehypeStringify from 'rehype-stringify'
 import {parse as parseHtml} from 'node-html-parser'
-import remarkSimpleToc, {DEFAULT_OPTIONS, type Options} from '../src/index'
+import remarkToc, {DEFAULT_OPTIONS, type Options} from '../src/index'
 
 
 function normalizeHtml(html: string): string {
@@ -22,7 +22,7 @@ function checkEqual(md: string, html: string, options: Options): void {
 function mdToHtml(md: string, options: Options): string {
   const {value} = unified().
     use(remarkParse).
-    use(remarkSimpleToc, options).
+    use(remarkToc, options).
     use(remarkRehype).
     use(rehypeStringify).
     processSync(md)
