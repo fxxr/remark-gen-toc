@@ -1,7 +1,6 @@
 # remark-gen-toc
 
-[![npm version](https://img.shields.io/npm/v/remark-gen-toc.svg)](https://www.
-npmjs.com/package/remark-gen-toc)
+[![npm version](https://img.shields.io/npm/v/remark-gen-toc.svg)](https://www.npmjs.com/package/remark-gen-toc)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
  
 A Remark plugin to generate a table of contents
